@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+# Seiten tragen noindex – sie sollen nicht bei Google erscheinen.
