@@ -2,6 +2,7 @@
 <html lang="de">
 <head>
 <meta charset="utf-8">
+<script>document.documentElement.classList.add('js')</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Hartmann & Partner – Beispielseite von allesodernetz.de</title>
@@ -37,19 +38,19 @@
   <section class="hero">
     <div class="wrap hero-in">
       <div class="hero-text">
-        <h1>Steuern mit klarem Kopf.</h1>
-        <p class="lead">Wir beraten Privatpersonen, Selbstständige und kleine Unternehmen in Köln. Persönlich, digital und in verständlicher Sprache.</p>
-        <div class="actions">
+        <h1 data-anim="hero" style="--d:0.1s">Steuern mit klarem Kopf.</h1>
+        <p class="lead" data-anim="hero" style="--d:0.3s">Wir beraten Privatpersonen, Selbstständige und kleine Unternehmen in Köln. Persönlich, digital und in verständlicher Sprache.</p>
+        <div class="actions" data-anim="hero" style="--d:0.45s">
           <a class="btn" href="#kontakt">Erstgespräch vereinbaren</a>
           <a class="textlink" href="#leistungen">Leistungen ansehen</a>
         </div>
-        <ul class="trust">
+        <ul class="trust" data-anim="hero" style="--d:0.6s">
           <li><b>Seit 2004</b> in Köln</li>
-          <li><b>3</b> Steuerberater</li>
-          <li><b>24 h</b> Antwortzeit</li>
+          <li><b data-count="3">3</b> Steuerberater</li>
+          <li><b data-count="24" data-suffix=" h">24 h</b> Antwortzeit</li>
         </ul>
       </div>
-      <figure class="hero-img">
+      <figure class="hero-img" data-anim="hero" style="--d:0.35s">
         <img src="/img/hp-portrait-800.jpg" srcset="/img/hp-portrait-800.jpg 800w, /img/hp-portrait-1600.jpg 1600w" sizes="(max-width: 860px) 100vw, 40vw" alt="Steuerberater Jonas Weber im Anzug vor heller Wand">
         <figcaption>Jonas Weber, Steuerberater und Partner</figcaption>
       </figure>
@@ -59,7 +60,7 @@
   <section class="services" id="leistungen">
     <div class="wrap">
       <h2>Leistungen</h2>
-      <div class="cols">
+      <div class="cols" data-stagger>
         <div class="col">
           <h3>Für Privatpersonen</h3>
           <ul>
@@ -84,7 +85,7 @@
     <div class="wrap method-in">
       <div>
         <h2>Weniger Papier. Mehr Klarheit.</h2>
-        <ol>
+        <ol data-stagger>
           <li><h3>Belege hochladen</h3><p>Per App oder E-Mail, wann es Ihnen passt. Ordner und Porto entfallen.</p></li>
           <li><h3>Wir prüfen und buchen</h3><p>Wir melden uns nur, wenn etwas fehlt, und behalten alle Fristen im Blick.</p></li>
           <li><h3>Ergebnis besprechen</h3><p>Persönlich in der Kanzlei oder per Video. Verständlich erklärt, mit klaren Empfehlungen.</p></li>
@@ -101,7 +102,7 @@
         <p>Steuerberater, Fachangestellte und Auszubildende. Sie haben bei uns eine feste Ansprechperson, die Ihre Situation kennt.</p>
       </div>
       <img class="team-img" src="/img/hp-team-1600.jpg" srcset="/img/hp-team-800.jpg 800w, /img/hp-team-1600.jpg 1600w" sizes="100vw" alt="Das Team der Kanzlei, in einer Reihe stehend" loading="lazy">
-      <ul class="people">
+      <ul class="people" data-stagger>
         <li><b>Clara Hartmann</b>Steuerberaterin, Gründerin</li>
         <li><b>Jonas Weber</b>Steuerberater, Partner</li>
         <li><b>Elif Demir</b>Steuerfachangestellte</li>

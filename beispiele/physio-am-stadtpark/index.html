@@ -2,6 +2,7 @@
 <html lang="de">
 <head>
 <meta charset="utf-8">
+<script>document.documentElement.classList.add('js')</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Physiotherapie am Stadtpark – Beispielseite von allesodernetz.de</title>
@@ -37,14 +38,14 @@
   <section class="hero">
     <div class="wrap">
       <div class="hero-box">
-        <img src="/img/physio-raum-1600.jpg" srcset="/img/physio-raum-800.jpg 800w, /img/physio-raum-1600.jpg 1600w" sizes="(max-width: 860px) 100vw, 1160px" alt="Heller Behandlungsraum mit Liege und Therapeut">
-        <div class="hero-card">
+        <img data-zoom src="/img/physio-raum-1600.jpg" srcset="/img/physio-raum-800.jpg 800w, /img/physio-raum-1600.jpg 1600w" sizes="(max-width: 860px) 100vw, 1160px" alt="Heller Behandlungsraum mit Liege und Therapeut">
+        <div class="hero-card" data-anim="hero" style="--d:0.25s">
           <h1>Wieder schmerzfrei bewegen.</h1>
           <p>Krankengymnastik, manuelle Therapie und Training in ruhiger Atmosphäre. Termine von 7 bis 20 Uhr.</p>
           <a class="btn" href="#termin">Termin anfragen</a>
         </div>
       </div>
-      <ul class="facts">
+      <ul class="facts" data-stagger>
         <li>Alle Kassen und privat</li>
         <li>Termine meist innerhalb einer Woche</li>
         <li>Barrierefrei, Parkplätze am Haus</li>
@@ -58,7 +59,7 @@
         <h2>Behandlungen</h2>
         <p>Auf Rezept oder als Selbstzahler. Wir stimmen jede Behandlung auf Ihre Beschwerden ab.</p>
       </div>
-      <ul class="tlist">
+      <ul class="tlist" data-stagger>
         <li><h3>Krankengymnastik</h3><p>Gezielte Übungen nach Verletzungen, Operationen oder bei chronischen Beschwerden.</p></li>
         <li><h3>Manuelle Therapie</h3><p>Sanfte Techniken für Gelenke und Wirbelsäule, wenn sich etwas blockiert anfühlt.</p></li>
         <li><h3>Lymphdrainage</h3><p>Entstauende Massage, zum Beispiel nach Operationen oder bei Schwellungen.</p></li>
@@ -85,7 +86,7 @@
     <div class="wrap first-in">
       <div>
         <h2>Ihr erster Termin</h2>
-        <ol>
+        <ol data-stagger>
           <li><h3>Gespräch</h3><p>Wir hören zu und schauen uns Ihre Beschwerden genau an.</p></li>
           <li><h3>Behandlung</h3><p>Abgestimmt auf Sie und Ihr Rezept, in ruhiger Atmosphäre.</p></li>
           <li><h3>Übungen für zu Hause</h3><p>Damit der Effekt bleibt, auch zwischen den Terminen.</p></li>

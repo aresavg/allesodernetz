@@ -2,6 +2,7 @@
 <html lang="de">
 <head>
 <meta charset="utf-8">
+<script>document.documentElement.classList.add('js')</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Salon Lune – Beispielseite von allesodernetz.de</title>
@@ -36,11 +37,11 @@
 
 <main id="start">
   <section class="hero">
-    <img class="hero-bg" src="/img/lune-salon-1600.jpg" srcset="/img/lune-salon-800.jpg 800w, /img/lune-salon-1600.jpg 1600w" sizes="100vw" alt="">
+    <img class="hero-bg" data-zoom src="/img/lune-salon-1600.jpg" srcset="/img/lune-salon-800.jpg 800w, /img/lune-salon-1600.jpg 1600w" sizes="100vw" alt="">
     <div class="wrap hero-in">
-      <h1>Zeit für dich.</h1>
-      <p>Haarsalon für Schnitt, Farbe und Locken in Köln-Ehrenfeld.</p>
-      <a class="btn" href="#termin">Wunschtermin anfragen</a>
+      <h1 data-anim="hero" style="--d:0.15s">Zeit für dich.</h1>
+      <p data-anim="hero" style="--d:0.4s">Haarsalon für Schnitt, Farbe und Locken in Köln-Ehrenfeld.</p>
+      <a class="btn" href="#termin" data-anim="hero" style="--d:0.6s">Wunschtermin anfragen</a>
     </div>
   </section>
 
@@ -74,7 +75,7 @@
         <h2>Nadja</h2>
         <blockquote>„Ich schneide nicht nach Trend, sondern nach dir.“</blockquote>
         <p>Nadja hat Lune 2019 eröffnet. Sie ist spezialisiert auf Locken, natürliche Farbe und Schnitte, die auch nach sechs Wochen noch sitzen. Im Salon arbeitet sie mit zwei Kolleginnen und nimmt sich für jeden Termin genug Zeit.</p>
-        <ul class="tags"><li>Locken</li><li>Balayage</li><li>Natürliche Farbe</li></ul>
+        <ul class="tags" data-stagger><li>Locken</li><li>Balayage</li><li>Natürliche Farbe</li></ul>
       </div>
     </div>
   </section>

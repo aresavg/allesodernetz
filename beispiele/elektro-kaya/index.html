@@ -2,6 +2,7 @@
 <html lang="de">
 <head>
 <meta charset="utf-8">
+<script>document.documentElement.classList.add('js')</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Elektro Kaya – Beispielseite von allesodernetz.de</title>
@@ -39,15 +40,15 @@
 
 <main id="start">
   <section class="hero">
-    <img class="hero-bg" src="/img/kaya-hero-1600.jpg" srcset="/img/kaya-hero-800.jpg 800w, /img/kaya-hero-1600.jpg 1600w" sizes="100vw" alt="">
+    <img class="hero-bg" data-zoom src="/img/kaya-hero-1600.jpg" srcset="/img/kaya-hero-800.jpg 800w, /img/kaya-hero-1600.jpg 1600w" sizes="100vw" alt="">
     <div class="wrap hero-in">
-      <h1>Strom.<br>Sicher.<br>Sofort.</h1>
-      <p class="lead">Elektroinstallation, Smart Home und Wallbox für Köln und 30 km Umkreis. Vom Meister geplant, sauber ausgeführt, zum Festpreis.</p>
-      <div class="actions">
+      <h1 data-anim="hero" style="--d:0.1s">Strom.<br>Sicher.<br>Sofort.</h1>
+      <p class="lead" data-anim="hero" style="--d:0.3s">Elektroinstallation, Smart Home und Wallbox für Köln und 30 km Umkreis. Vom Meister geplant, sauber ausgeführt, zum Festpreis.</p>
+      <div class="actions" data-anim="hero" style="--d:0.45s">
         <a class="btn" href="#kontakt">Rückruf anfordern</a>
         <a class="btn btn-ghost" href="#leistungen">Leistungen ansehen</a>
       </div>
-      <ul class="badges">
+      <ul class="badges" data-anim="hero" style="--d:0.6s">
         <li>24-h-Notdienst</li>
         <li>Festpreis-Angebot</li>
         <li>Alle Hersteller</li>
@@ -61,7 +62,7 @@
         <h2>Leistungen</h2>
         <p>Für Privathaushalte, Vermieter und kleine Gewerbe. Wir planen, installieren und prüfen, alles aus einer Hand.</p>
       </div>
-      <ul class="grid">
+      <ul class="grid" data-stagger>
         <li><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 26V12l10-7 10 7v14H6zM13 26v-8h6v8"/></svg><h3>Elektroinstallation</h3><p>Neubau, Umbau und Sanierung. Leitungen, Verteiler, Steckdosen und Licht.</p></li>
         <li><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 9h22M5 16h22M5 23h22M10 6v6M20 13v6M14 20v6"/></svg><h3>Altbau-Sanierung</h3><p>Alte Leitungen raus, neue rein. Mit möglichst wenig Staub und Aufwand für Sie.</p></li>
         <li><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4v6M9 8l3 5M23 8l-3 5M8 17a8 8 0 1 0 16 0 8 8 0 0 0-16 0zM16 17v4"/></svg><h3>Smart Home</h3><p>Licht, Heizung und Rollläden per App oder Taster. Herstellerunabhängig geplant.</p></li>
@@ -82,10 +83,10 @@
         <h2>Familienbetrieb in zweiter Generation.</h2>
         <p>Was 1998 mit einem Transporter und viel Ehrgeiz begann, ist heute ein Team aus Meistern, Gesellen und Azubis. Wir arbeiten sauber und pünktlich und erklären verständlich, was wir tun.</p>
         <p>Jeder Auftrag hat bei uns einen festen Ansprechpartner, vom ersten Anruf bis zur Übergabe.</p>
-        <dl class="stats">
-          <div><dt>Jahre Erfahrung</dt><dd>25+</dd></div>
-          <div><dt>Fachkräfte im Team</dt><dd>12</dd></div>
-          <div><dt>Notdienst</dt><dd>24 h</dd></div>
+        <dl class="stats" data-bars>
+          <div><span class="bar" data-bar aria-hidden="true"></span><dt>Jahre Erfahrung</dt><dd data-count="25" data-suffix="+">25+</dd></div>
+          <div><span class="bar" data-bar style="--d:.25s" aria-hidden="true"></span><dt>Fachkräfte im Team</dt><dd data-count="12">12</dd></div>
+          <div><span class="bar" data-bar style="--d:.4s" aria-hidden="true"></span><dt>Notdienst</dt><dd data-count="24" data-suffix=" h">24 h</dd></div>
         </dl>
       </div>
     </div>
@@ -98,7 +99,7 @@
   <section class="steps">
     <div class="wrap">
       <h2>So läuft ein Auftrag ab</h2>
-      <ol>
+      <ol data-stagger>
         <li><h3>Anruf oder Anfrage</h3><p>Sie schildern kurz, worum es geht. Wir melden uns am selben Werktag.</p></li>
         <li><h3>Termin vor Ort</h3><p>Wir schauen uns alles an und beraten Sie ehrlich, auch wenn weniger reicht.</p></li>
         <li><h3>Festpreis-Angebot</h3><p>Schriftlich und verständlich. Der Preis im Angebot ist der Preis auf der Rechnung.</p></li>
@@ -111,18 +112,18 @@
     <div class="wrap reviews-in">
       <div class="score">
         <h2>Bewertungen</h2>
-        <p class="big">4,9</p>
+        <p class="big" data-count="4.9" data-decimals="1">4,9</p>
         <p class="stars" aria-label="4,9 von 5 Sternen">★★★★★</p>
         <p class="count">128 Bewertungen auf Google</p>
-        <div class="bars-dist" aria-hidden="true">
-          <div><span>5</span><i style="--w:92%"></i></div>
-          <div><span>4</span><i style="--w:6%"></i></div>
-          <div><span>3</span><i style="--w:1%"></i></div>
-          <div><span>2</span><i style="--w:0%"></i></div>
-          <div><span>1</span><i style="--w:1%"></i></div>
+        <div class="bars-dist" data-bars aria-hidden="true">
+          <div><span>5</span><i><b data-bar style="width:92%"></b></i></div>
+          <div><span>4</span><i><b data-bar style="width:6%;--d:.2s"></b></i></div>
+          <div><span>3</span><i><b data-bar style="width:1%;--d:.3s"></b></i></div>
+          <div><span>2</span><i><b data-bar style="width:0%"></b></i></div>
+          <div><span>1</span><i><b data-bar style="width:1%;--d:.4s"></b></i></div>
         </div>
       </div>
-      <ul class="cards">
+      <ul class="cards" data-stagger>
         <li><p class="who"><span class="av" style="background:#4b7bec">S</span><b>Sabine M.</b><small>vor 2 Wochen</small></p><p class="stars-s" aria-label="5 Sterne">★★★★★</p><p>Sicherung flog ständig raus, am selben Tag war jemand da. Fehler gefunden, sauber erklärt, fairer Preis.</p></li>
         <li><p class="who"><span class="av" style="background:#20a464">T</span><b>Thomas K.</b><small>vor 1 Monat</small></p><p class="stars-s" aria-label="5 Sterne">★★★★★</p><p>Wallbox inklusive Anmeldung beim Netzbetreiber, alles aus einer Hand. Pünktlich und ordentlich.</p></li>
         <li><p class="who"><span class="av" style="background:#e8710a">A</span><b>Aylin D.</b><small>vor 3 Monaten</small></p><p class="stars-s" aria-label="5 Sterne">★★★★★</p><p>Altbau komplett neu verkabelt. Herr Kaya hat sich viel Zeit für die Beratung genommen, das Angebot war genau der Endpreis.</p></li>

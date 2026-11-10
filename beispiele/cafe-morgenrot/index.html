@@ -2,6 +2,7 @@
 <html lang="de">
 <head>
 <meta charset="utf-8">
+<script>document.documentElement.classList.add('js')</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Café Morgenrot – Beispielseite von allesodernetz.de</title>
@@ -37,16 +38,16 @@
   <section class="hero">
     <div class="wrap hero-in">
       <div class="hero-text">
-        <h1>Guten Morgen.</h1>
-        <p class="lead">Kaffee aus eigener Röstung, Frühstück bis 14 Uhr und Kuchen aus der Backstube nebenan. Mitten in der Lindenstraße.</p>
-        <div class="actions">
+        <h1 data-anim="hero" style="--d:0.1s">Guten Morgen.</h1>
+        <p class="lead" data-anim="hero" style="--d:0.3s">Kaffee aus eigener Röstung, Frühstück bis 14 Uhr und Kuchen aus der Backstube nebenan. Mitten in der Lindenstraße.</p>
+        <div class="actions" data-anim="hero" style="--d:0.45s">
           <a class="btn" href="#tisch">Tisch anfragen</a>
           <a class="link" href="#karte">Zur Karte</a>
         </div>
-        <p class="today"><span class="open-dot" aria-hidden="true"></span>Mo–Fr 8–18 Uhr, Sa–So 9–17 Uhr</p>
+        <p class="today" data-anim="hero" style="--d:0.6s"><span class="open-dot" aria-hidden="true"></span>Mo–Fr 8–18 Uhr, Sa–So 9–17 Uhr</p>
       </div>
       <figure class="hero-img">
-        <img src="/img/cafe-innen-1600.jpg" srcset="/img/cafe-innen-800.jpg 800w, /img/cafe-innen-1600.jpg 1600w" sizes="(max-width: 860px) 100vw, 55vw" alt="Gäste an Holztischen im hellen Gastraum des Cafés">
+        <img data-zoom src="/img/cafe-innen-1600.jpg" srcset="/img/cafe-innen-800.jpg 800w, /img/cafe-innen-1600.jpg 1600w" sizes="(max-width: 860px) 100vw, 55vw" alt="Gäste an Holztischen im hellen Gastraum des Cafés">
       </figure>
     </div>
   </section>
@@ -57,7 +58,7 @@
         <h2>Unsere Karte</h2>
         <p>Hafer- und Mandelmilch ohne Aufpreis. Alles auch zum Mitnehmen.</p>
       </div>
-      <div class="menu">
+      <div class="menu" data-stagger>
         <div class="menu-col">
           <h3>Frühstück</h3>
           <dl>
@@ -102,7 +103,7 @@
       </div>
     </div>
     <div class="wrap">
-      <ul class="facts">
+      <ul class="facts" data-stagger>
         <li><h3>Eigene Röstung</h3><p>Bohnen von kleinen Farmen, jede Woche frisch geröstet.</p></li>
         <li><h3>Backstube nebenan</h3><p>Kuchen und Brot ohne Fertigmischungen.</p></li>
         <li><h3>Hunde willkommen</h3><p>Der Wassernapf steht bereit, ein Leckerli auch.</p></li>
@@ -113,7 +114,7 @@
   <section class="voices" aria-labelledby="gaeste">
     <div class="wrap">
       <h2 id="gaeste">Was unsere Gäste sagen</h2>
-      <div class="quotes">
+      <div class="quotes" data-stagger>
         <figure><blockquote>„Der beste Flat White der Stadt und ein Käsekuchen, für den ich extra früher aufstehe.“</blockquote><figcaption>Lea, Stammgast</figcaption></figure>
         <figure><blockquote>„Gemütlich, herzlich, und unser Hund wird jedes Mal begrüßt.“</blockquote><figcaption>Tom mit Bruno</figcaption></figure>
         <figure><blockquote>„Das Sonntagsfrühstück hier ist unser Ritual geworden.“</blockquote><figcaption>Familie Brandt</figcaption></figure>

@@ -36,3 +36,25 @@ form.is-done>*:not(.form-done){display:none}
 form.is-done .form-done{display:block}
 .form-error{display:none;margin:0;font-weight:700}
 form.has-error .form-error{display:block}
+
+/* Animationen: Einstieg im Hero, Einblenden beim Scrollen, Zähler.
+   Läuft über animation (nicht transition), damit Hover-Effekte der Elemente erhalten bleiben. */
+@keyframes settle{from{transform:scale(1.08)}to{transform:scale(1)}}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.js [data-zoom]{animation:settle 1.8s cubic-bezier(.2,.7,.2,1) both}
+.js [data-anim]{opacity:0}
+.js [data-anim].in{animation:rise .9s cubic-bezier(.2,.8,.2,1) both;animation-delay:var(--d,0s)}
+.js [data-stagger]>*{opacity:0}
+.js [data-stagger].in>*{animation:rise .8s cubic-bezier(.2,.8,.2,1) both}
+.js [data-stagger].in>:nth-child(2){animation-delay:.08s}.js [data-stagger].in>:nth-child(3){animation-delay:.16s}
+.js [data-stagger].in>:nth-child(4){animation-delay:.24s}.js [data-stagger].in>:nth-child(5){animation-delay:.32s}
+.js [data-stagger].in>:nth-child(6){animation-delay:.4s}
+[data-bar]{transform-origin:left center}
+.js [data-bar]{transform:scaleX(0)}
+.js .in [data-bar]{animation:grow 1.4s cubic-bezier(.2,.8,.2,1) both;animation-delay:var(--d,.1s)}
+@media (prefers-reduced-motion:reduce){
+  .js [data-anim],.js [data-stagger]>*{opacity:1!important;animation:none!important}
+  .js [data-bar]{transform:none!important;animation:none!important}
+  .js [data-zoom]{animation:none}
+}
