@@ -27,7 +27,14 @@ p{margin:0}
 .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 60%;opacity:.5}
 .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,19,48,.55) 0%,rgba(12,19,48,.35) 40%,rgba(12,19,48,.92) 100%)}
 .hero-in{position:relative;z-index:1;padding:160px 0 clamp(64px,9vw,112px)}
-.hero h1{font-size:clamp(46px,7.4vw,104px);max-width:13ch;letter-spacing:-.04em;line-height:.98}
+.hero h1{font-size:clamp(44px,7.4vw,104px);letter-spacing:-.04em;line-height:1.02}
+.hero h1>span{display:block}
+.tick-wrap{height:1.12em;overflow:hidden}
+.tick{display:block;animation:tick 13s cubic-bezier(.7,0,.3,1) infinite}
+.tick span{display:block;height:1.12em;line-height:1.12em;background:linear-gradient(90deg,#f2a23a,#ffd28a,#f2a23a,#e07a2c);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 6s ease-in-out infinite}
+@keyframes tick{0%,13%{transform:translateY(0)}16.6%,29.6%{transform:translateY(-1.12em)}33.3%,46.3%{transform:translateY(-2.24em)}50%,63%{transform:translateY(-3.36em)}66.6%,79.6%{transform:translateY(-4.48em)}83.3%,96.3%{transform:translateY(-5.6em)}100%{transform:translateY(-6.72em)}}
+@keyframes shine{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+@media (prefers-reduced-motion:reduce){.tick,.tick span{animation:none}}
 .lead{font-size:clamp(18px,1.6vw,21px);max-width:40ch;margin-top:28px;color:#d3d8ea}
 .actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px}
 
